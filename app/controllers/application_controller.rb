@@ -10,6 +10,11 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/helpers/current_user' do 
+    erb :current_user
+  end
+  
+
   post '/login' do
 
   end
