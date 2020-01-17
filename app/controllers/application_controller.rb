@@ -1,5 +1,6 @@
 require_relative '../../config/environment'
 class ApplicationController < Sinatra::Base
+  
   configure do
     set :views, Proc.new { File.join(root, "../views/") }
     enable :sessions unless test?
@@ -8,10 +9,6 @@ class ApplicationController < Sinatra::Base
 
   get '/' do
     erb :index
-  end
-
-  get '/helpers/current_user' do 
-    erb :current_user
   end
   
 
