@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   
 
   post '/login' do
-    redirect to '/helpers'
+    redirect to '/account'
   session[:user_id]=current_user(session)
    
   end
