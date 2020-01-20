@@ -30,8 +30,11 @@ class ApplicationController < Sinatra::Base
       erb :error
     end
 end
+
   get '/logout' do
-      User.destory(params[:id])
+    session.clear
+    redirect to '/'
+  end
     
   end
 # binding.pry
