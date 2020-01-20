@@ -36,7 +36,7 @@ end
     redirect to '/'
   end
     
-  end
+  
 # binding.pry
 
 end
