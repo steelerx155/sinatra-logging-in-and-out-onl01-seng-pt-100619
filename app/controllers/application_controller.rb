@@ -24,10 +24,10 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/logout' do
-    binding.pry
+    
 
   end
-
+binding.pry
 
 end
 
