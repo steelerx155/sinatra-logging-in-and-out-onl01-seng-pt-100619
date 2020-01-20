@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
 end
   get '/logout' do
       User.destory(params[:id])
-    redirect to '/login'
+    redirect to '/account'
   end
 # binding.pry
 
