@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
     
 
   end
-binding.pry
+# binding.pry
 
 end
 
